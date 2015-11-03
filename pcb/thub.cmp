@@ -1,0 +1,185 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Mon Nov  2 11:44:49 2015
+
+BeginCmp
+TimeStamp = /56371219;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /56371225;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /56371231;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637123D;
+Reference = C4;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /56370BE6;
+Reference = C5;
+ValeurCmp = 20p;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /56370BF5;
+Reference = C6;
+ValeurCmp = 20p;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5635CA8A;
+Reference = CON1;
+ValeurCmp = USB-MINI-B;
+IdModule  = USB_MINI_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /56372365;
+Reference = D1;
+ValeurCmp = red;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637240E;
+Reference = D2;
+ValeurCmp = green;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /563559EA;
+Reference = IC1;
+ValeurCmp = atmega*8;
+IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /5635D671;
+Reference = J1;
+ValeurCmp = ICSP;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /56373D77;
+Reference = J2;
+ValeurCmp = UEXT;
+IdModule  = PIN_ARRAY_5x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /563692C9;
+Reference = J3;
+ValeurCmp = millefori;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /563692BA;
+Reference = J4;
+ValeurCmp = breadboard;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /56369BE2;
+Reference = J5;
+ValeurCmp = STRIP-12;
+IdModule  = STRIP-12;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637403A;
+Reference = J6;
+ValeurCmp = STRIP-4;
+IdModule  = STRIP-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /56372257;
+Reference = L1;
+ValeurCmp = 10uH;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /56370DC6;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /56372372;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /56372414;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637399E;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /5635D772;
+Reference = SW1;
+ValeurCmp = BUTTON;
+IdModule  = SW;
+EndCmp
+
+BeginCmp
+TimeStamp = /5635D6B8;
+Reference = U1;
+ValeurCmp = WS2812B;
+IdModule  = WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /5635D6C7;
+Reference = U2;
+ValeurCmp = WS2812B;
+IdModule  = WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /56369E11;
+Reference = U3;
+ValeurCmp = WS2812B;
+IdModule  = WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /5635CA44;
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = Xtal-smd;
+EndCmp
+
+EndListe
