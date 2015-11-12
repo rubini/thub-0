@@ -3,7 +3,7 @@
   (general
     (links 83)
     (no_connects 0)
-    (area 99.949999 99.949999 132.050001 140.050001)
+    (area 73.558333 98.003956 133.6096 142.964066)
     (thickness 1.6)
     (drawings 24)
     (tracks 489)
@@ -14,8 +14,8 @@
 
   (page A3)
   (layers
-    (15 F.Cu signal)
-    (0 B.Cu signal)
+    (15 F.Cu signal hide)
+    (0 B.Cu signal hide)
     (16 B.Adhes user)
     (17 F.Adhes user)
     (18 B.Paste user)
@@ -32,7 +32,7 @@
   )
 
   (setup
-    (last_trace_width 0.6)
+    (last_trace_width 0.2)
     (user_trace_width 0.26)
     (user_trace_width 0.4)
     (user_trace_width 0.6)
@@ -65,7 +65,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFFBF)
     (pcbplotparams
-      (layerselection 3178497)
+      (layerselection 284983297)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -84,12 +84,12 @@
       (plotothertext true)
       (plotinvisibletext false)
       (padsonsilk false)
-      (subtractmaskfromsilk false)
+      (subtractmaskfromsilk true)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory output))
   )
 
   (net 0 "")
