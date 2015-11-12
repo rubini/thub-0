@@ -2,7 +2,8 @@ CROSS_COMPILE ?= avr-
 MCU   	= atmega168p
 
 TTY	?= /dev/ttyUSB0
-ISP	?= stk500v2 -P $(TTY)
+#ISP	?= stk500v2 -P $(TTY)
+ISP	?= usbasp
 AVRDUDE = avrdude -F -p m168p -c $(ISP)
 
 CC      = $(CROSS_COMPILE)gcc
@@ -17,13 +18,12 @@ CFLAGS	= -g -mmcu=$(MCU) -Wall -Wstrict-prototypes -O2 \
 		-D__GIT_COMMIT__=\"$(GIT_COMMIT)\"
 OCFLAGS = -R .eeprom
 
-LIBOBJ	= boot.o vectors.o jiffies.o uart.o io.o placeholders.o neopix.o
-LIBOBJ	+= w1.o w1-temp.o udelay.o dht11.o
-LIBOBJ	+= string.o
-LIB	= libleder.a
-LDFLAGS	= -L. -lleder -T bathos.lds -lgcc
+LIBOBJ	= boot.o vectors.o jiffies.o placeholders.o string.o
+#LIBOBJ += neopix.o
+LIB	= libthub.a
+LDFLAGS	= -L. -lthub -T thub.lds -lgcc
 
-ALL	= test-uart.hex test-jiffies.hex test-neopix.hex leder.hex avrio.hex
+ALL	= empty.hex
 ALLFILES = $(ALL:.hex=.o) $(ALL:.hex=) $(ALL)
 
 all: $(LIB) $(ALLFILES)
@@ -44,7 +44,7 @@ clean:
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 # for "make load" we have one target only, so P= is pre-set here.
-P = avrio
+P = thub-sw
 export P
 
 load:
@@ -56,6 +56,8 @@ load:
 	fi
 
 
-# Init the cpu
+# Init the cpu. For 32u4 we nned a chip erase, here we do not.
 init:
-	$(AVRDUDE) -e
+	@ #$(AVRDUDE) -e; #For 32u4 we need a chip erase, here we do not.
+	$(AVRDUDE) -U hfuse:w:0xdf:m
+	$(AVRDUDE) -U lfuse:w:0xff:m
