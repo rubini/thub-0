@@ -23,7 +23,7 @@ LIBOBJ	= boot.o vectors.o jiffies.o placeholders.o string.o io.o
 LIB	= libthub.a
 LDFLAGS	= -L. -lthub -T thub.lds -lgcc
 
-ALL	= empty.hex
+ALL	= empty.hex tick1s.hex
 ALLFILES = $(ALL:.hex=.o) $(ALL:.hex=) $(ALL)
 
 all: $(LIB) $(ALLFILES)
