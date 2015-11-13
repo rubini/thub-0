@@ -44,6 +44,7 @@ static void neopix_off_n(int n)
 void setup(void)
 {
 	NEOPIX_SETDIR();
+	neopix_reset();
 	neopix_off_n(3);
 	uart_setup();
 	timer_setup();
