@@ -23,7 +23,7 @@ LIBOBJ += neopix.o
 LIB	= libthub.a
 LDFLAGS	= -L. -lthub -T thub.lds -lgcc
 
-ALL	= empty.hex tick1s.hex
+ALL	= empty.hex tick1s.hex sema.hex
 ALLFILES = $(ALL:.hex=.o) $(ALL:.hex=) $(ALL)
 
 all: $(LIB) $(ALLFILES)
