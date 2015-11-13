@@ -1,4 +1,6 @@
+#include <thub.h>
 
-void setup() {}
-
-void main() {}
+void main(void)
+{
+	puts("Here I am, I do nothing\n");
+}

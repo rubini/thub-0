@@ -38,5 +38,3 @@ SECTIONS
 		__bss_end = .;
 	}
 }
-
-PROVIDE(puts = _start);
