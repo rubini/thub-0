@@ -54,3 +54,15 @@ extern int puts(const char *s);
  */
 extern void main(void);
 extern void setup(void);
+
+/*********
+ * Neopixel stuff (on PC1)
+ */
+#define NEOPIX_RAISE() (regs[REG_PORTC] = 0x02)
+#define NEOPIX_LOWER() (regs[REG_PORTC] = 0x00)
+#define NEOPIX_SETDIR() (regs[REG_DDRC] |= 0x02)
+
+extern void neopix_reset(void);
+/* please call this with interrupts disabled */
+extern void neopix_rgb(uint8_t r, uint8_t g, uint8_t b);
+

@@ -1,4 +1,4 @@
-#include <hw.h>
+#include <thub.h>
 
 static int uart_setup(void)
 {
@@ -32,8 +32,19 @@ static int timer_setup(void)
 	return 0;
 }
 
+static void neopix_off_n(int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+		neopix_rgb(0, 0, 0);
+	neopix_reset();
+}
+
 void setup(void)
 {
+	NEOPIX_SETDIR();
+	neopix_off_n(3);
 	uart_setup();
 	timer_setup();
 }

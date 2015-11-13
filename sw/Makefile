@@ -19,7 +19,7 @@ CFLAGS	= -g -mmcu=$(MCU) -Wall -Wstrict-prototypes -O2 \
 OCFLAGS = -R .eeprom
 
 LIBOBJ	= boot.o vectors.o jiffies.o placeholders.o string.o io.o
-#LIBOBJ += neopix.o
+LIBOBJ += neopix.o
 LIB	= libthub.a
 LDFLAGS	= -L. -lthub -T thub.lds -lgcc
 
