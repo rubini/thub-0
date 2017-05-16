@@ -1,0 +1,27 @@
+
+This is the "two hour uC board".  I designed it for a conference,
+held on 2015-11 in Bozen.
+
+The PCB can plug in a breadboard: the two power pins and the I/O strip
+are there to that aim.
+
+It as a atmega/attiny board (i.e. the arduino CPU).  You can fit
+attiny48, atmega8, atmega88, atmega168 and atmega328.
+If you mount the xtal you can program the fuses for 16MHz operation,
+otherwise 8MHz.
+
+Peripherals are:
+   - 3 rgb leds
+   - one button
+   - one output led (on a pwm pin)
+   - uext connector (uart, i2c, spi)
+   - pin strip for analog
+   - pin strip for other I/O pins
+
+There is video of my talk, but I find myself quite boring. Moreover,
+the screen is not visible in the video:
+   https://www.sfscon.it/it/workshop/open-hardware-6/
+
+After producing 50 and leaving 10 of them to conference attendees, I'm
+now using the boards for other stuff, like teaching soldering (where
+attendees can keep on device.
